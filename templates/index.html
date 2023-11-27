@@ -15,8 +15,19 @@
         <section class="container-welcome">
             <h1>welcome</h1>
             <h2>Thanks for participating in the poll</h2>
-            <button type="button" href="#">Let's go</button>
+            <button type="button" id="idButton" onmouseenter="changeTextin()" onmouseout="changeTextout()" href="#">Let's go</button>
         </section>
     </main>
+    <script>
+        function changeTextin() {
+            let button = document.getElementById("idButton");
+            button.innerHTML = "Just Go Ahead";
+        }
+
+        function changeTextout() {
+            let buttonOut = document.getElementById('idButton');
+            buttonOut.innerHTML = "Let's go";
+        }
+    </script>
 </body>
 </html>
