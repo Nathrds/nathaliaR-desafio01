@@ -92,12 +92,48 @@ h2 {
     font-size: 1em;
 }
 
-.container-info button:hover {
+.button-page2 button:hover, .container-info button:hover {
     background-color: var(--button-after);
     color: #000;
     cursor: pointer;
+    font-weight: bolder;
 }
 
 @media screen and (max-width: 480px) {
     .container-info button { margin-top: 15px; }
+}
+
+
+/*Page 02 - start*/
+.container-info-pg02 { 
+    width: 400px;
+}
+
+#h1-pg02 {
+    font-size: 2.1em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#h2-pg02 {
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.6em;
+    margin-bottom: 20px;
+}
+
+.button-page2 {
+    border: 1px solid salmon;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.button-page2 button{
+    border: none;
+    background-color: var(--button-before);
+    color: #fff;
+    padding: 3.5px 23px;
+    border-radius: 50px;
 }
