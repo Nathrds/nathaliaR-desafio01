@@ -95,3 +95,9 @@ h2 {
 @media screen and (max-width: 480px) {
     .container-welcome button { margin-top: 15px;}
 }
+
+.container-welcome button:hover {
+    background-color: var(--button-after);
+    color: #000;
+    cursor: pointer;
+}
