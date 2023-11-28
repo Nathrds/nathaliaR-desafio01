@@ -4,39 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Financial Help</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <section>
+    <main class="container-all">
+        <section id="container-img-size">
             <img src="../img/men-pg03.svg" alt="A man with short hair, wearing eyeglasses, dressed in a green formal outfit and working on the computer.">
         </section>
 
-        <section>
-            <form action="cadastro.php" method="post">
-                <label for="status">What is the status of your account?</label>
-                <select name="status" id="idstatus">
-                    <option value="status1" selected>I have not created an account yet</option>
-                    <option value="status2">I already have credit in my account</option>
-                    <option value="status3">I don't know what the status of my account is yet</option>
-                </select>
-            </form>
-        </section>
-
-        <section>
-            <form action="cadastro.php">
-                <label for="option">In which financial markets do you operate?</label>
-                <input type="radio" name="option" id="idoption1"> stock market
-                <input type="radio" name="option" id="idoption2"> foreign exchange
-                <input type="radio" name="option" id="idoption3"> commodity
-                <input type="radio" name="option" id="idoption4"> bond market
-                <input type="radio" name="option" id="idoption5"> cryptocurrency market
-            </form>
-        </section>
-        <section>
-            <a href="start-pg02.html"><button type="button">Back</button></a>
-            <a href="#"><button type="button">Next</button></a>
-            <a href="#"><button type="button">Skip</button></a>
-        </section>
+        <div class="container-form-status">
+            <section class="container-form-select">
+                <form action="cadastro.php" method="post">
+                    <label for="status">What is the status of your account?</label>
+                    <select name="status" id="idstatus" required>
+                        <option value="status1" selected>I have not created an account yet</option>
+                        <option value="status2">I already have credit in my account</option>
+                        <option value="status3">I don't know what the status of my account is yet</option>
+                    </select>
+                </form>
+            </section>
+            <section>
+                <form action="cadastro.php" method="post">
+                    <label for="option">In which financial markets do you operate?</label>
+                    <input type="radio" name="option" id="idoption1" required> stock market
+                    <input type="radio" name="option" id="idoption2" required> foreign exchange
+                    <input type="radio" name="option" id="idoption3" required> commodity
+                    <input type="radio" name="option" id="idoption4" required> bond market
+                    <input type="radio" name="option" id="idoption5" required> cryptocurrency market
+                </form>
+            </section>
+            <section>
+                <a href="start-pg02.html"><button type="button">Back</button></a>
+                <a href="#"><button type="button">Next</button></a>
+                <a href="#"><button type="button">Skip</button></a>
+            </section>
+        </div>
     </main>
 </body>
 </html>
