@@ -240,7 +240,12 @@ h2 {
 }
 
 @media screen and (max-width: 480px) {
-    .container-form-status { height: 550px; }
+    #container-img-size { margin-top: 35vh; }
+
+    .container-form-status {
+        margin: 0 3px; 
+        width: 318px;
+        height: 550px; }
 
     .container-form-select {
         width: 320px;
@@ -294,7 +299,7 @@ h2 {
 .form-radio-input input[type="radio"]:checked { border: 10px solid #3EB25E; }
 
 @media screen and (max-width: 480px) {
-    .container-form-radio form { width: 320px; }
+    .container-form-radio form { width: 317px; }
 
     .container-form-radio h3 { font-size: 16px; }
 
@@ -352,13 +357,13 @@ h2 {
 
 @media screen and (max-width: 480px) {
     .container-buttons {
-        width: 320px;
+        width: 317px;
         height: 90px;
     }
 
     .container-buttons button { font-size: 14px; }
 
-    .container-buttons-back-next { width: 320px; }
+    .container-buttons-back-next { width: 317px; }
 
     .container-buttons-back-next button {
         width: 142px;
