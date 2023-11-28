@@ -239,10 +239,13 @@ h2 {
     color: #3EB25E;
 } */
 
+/* form radio */
 .container-form-radio form {
     border: 1px solid purple;
     display: flex;
     flex-direction: column;
+    margin: 10px 0;
+    padding-top: 15px;
 }
 
 .container-form-radio h3 {
@@ -250,3 +253,24 @@ h2 {
     font-size: 24px;
 }
 
+.form-radio-input {
+    border: 1px solid blue;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 6px 0;
+    padding-left: 10px;
+    width: 310px;
+}
+
+.form-radio-input input[type="radio"] {
+    border: 9px solid #3eb15f57;
+    appearance: none; /* removing the default appearance of the browser */
+    border-radius: 50%;
+    margin-top: 4px;
+}
+
+.form-radio-input input[type="radio"]:checked {
+    border: 9px solid #3EB25E;
+}
+
+/* buttons */
