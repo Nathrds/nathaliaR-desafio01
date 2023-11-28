@@ -42,6 +42,7 @@ body {
 .container-img {
     /* border: 1px solid green; */
     margin-right: 50px;
+    width: 100%;
 }
 
 @media screen and (max-width: 480px) {
@@ -64,23 +65,23 @@ body {
 }
 
 h1 {
-    font-size: 8em;
+    font-size: 100px;
     margin: 10px auto;
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 26px;
     margin: 10px auto;
 }
 
 @media screen and (max-width: 480px) {
     .container-info {
-        padding: 5px;
-        width: 400px;
+        padding: 2px;
+        width: 500px;
     }
-    h1 {font-size: 4em;}
+    h1 {font-size: 56px;}
     
-    h2 {font-size: 1.5em;}        
+    h2 {font-size: 20px;}        
 }
 
 /*button*/
@@ -107,17 +108,25 @@ h2 {
 }
 
 
+
 /*Page 02 - start*/
+#container-img-pg02 img {
+    /* border: 1px solid darkmagenta; */
+    width: 40vw;
+    margin-right: 50px;
+}
+
 .container-info-pg02 { 
     /* border: 1px solid darkred; */
-    width: 450px;
-    height: 350px;
-    position: relative;
-    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+    width: 400px;
 }
 
 #h1-pg02 {
-    font-size: 2.1em;
+    font-size: 35px;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -126,8 +135,8 @@ h2 {
     /* border: 1px solid darkorange; */
     font-weight: 400;
     text-align: center;
-    font-size: 1.5em;
-    margin-bottom: 20px;
+    font-size: 25px;
+    margin-bottom: 25px;
 }
 
 .button-page2 {
@@ -136,8 +145,6 @@ h2 {
     flex-direction: row;
     justify-content: space-between;
     width: 300px;
-    position: absolute;
-    left: 12%;
 }
 
 .button-page2 button{
@@ -146,15 +153,29 @@ h2 {
     color: #fff;
     padding: 3.5px 23px;
     border-radius: 50px;
+    font-size: 14px;
 }
 
 
-@media screen and (min-width: 280px) {
-    .container-info-pg02 { height: 375px; }
-    
-    #h1-pg02 { font-size: 2em; }
+@media screen and (max-width: 480px) {
+    #container-img-pg02 img {
+        margin-right: 0px;
+        margin-top: 23vh;
+        width: 90vw;
+    }
 
-    #h2-pg02 { width: 350px; }
+    .container-info-pg02 {
+        margin-top: 6px;
+        height: 312px;
+        width: 320px; 
+    }
+    
+    #h1-pg02 { font-size: 30px; }
+
+    #h2-pg02 { 
+        width: 300px;
+        font-size: 20px;
+    }
 
     .button-page2 { left: 16%; }
 }
