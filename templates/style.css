@@ -183,7 +183,7 @@ h2 {
 
 /* Page 3 - forms status */
 .container-form-status {
-    border: 1px solid lightseagreen;
+    /* border: 1px solid lightseagreen; */
     width: 500px;
     height: 700px;
     display: flex;
@@ -192,9 +192,9 @@ h2 {
     align-items: center;
 }
 
-/* form status with select */
+/* form status with select and change the arrow*/
 .container-form-select {
-    border: 1px solid lime;
+    /* border: 1px solid lime; */
     position: relative;
     width: 480px;
     margin: 5px 3px;
@@ -217,7 +217,7 @@ h2 {
 }
 
 .container-form-select:after {
-    border: 1px solid darkmagenta;
+    /* border: 1px solid darkmagenta; */
     content: '\25BC'; /* unicode code for a downward arrow */
     position: absolute;
     top: 60%;
@@ -227,13 +227,13 @@ h2 {
 } 
 
 .container-form-select-option label {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     font-weight: 700;
     font-size: 26px;
 }
 
 .container-form-select-option select {
-    border: 1px solid brown;
+    /* border: 1px solid brown; */
     font-weight: 400;
     font-size: 19px;
     padding-left: 32px;
@@ -241,7 +241,7 @@ h2 {
 
 /* form radio */
 .container-form-radio form {
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
     display: flex;
     flex-direction: column;
     margin: 10px 0;
@@ -254,7 +254,7 @@ h2 {
 }
 
 .form-radio-input {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     margin: 6px 0;
     padding-left: 10px;
     width: 310px;
@@ -267,7 +267,7 @@ h2 {
 }
 
 .form-radio-input input[type="radio"] {
-    border: 9px solid #3eb15f57;
+    border: 10px solid #3eb15f57;
     appearance: none; /* removing the default appearance of the browser */
     border-radius: 50%;
     margin-top: 4px;
@@ -275,12 +275,12 @@ h2 {
 }
 
 .form-radio-input input[type="radio"]:checked {
-    border: 9px solid #3EB25E;
+    border: 10px solid #3EB25E;
 }
 
 /* buttons */
 .container-buttons {
-    border: 1px solid darkgoldenrod;
+    /* border: 1px solid darkgoldenrod; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -305,7 +305,7 @@ h2 {
 }
 
 .container-buttons-back-next {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
