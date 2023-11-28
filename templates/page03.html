@@ -14,7 +14,7 @@
 
         <div class="container-form-status">
             <section class="container-form-select">
-                <form action="cadastro.php" method="post">
+                <form class="container-form-select-option" action="cadastro.php" method="post">
                     <label for="status">What is the status of your account?</label>
                     <select name="status" id="idstatus" required>
                         <option value="status1" selected>I have not created an account yet</option>
@@ -23,14 +23,29 @@
                     </select>
                 </form>
             </section>
-            <section>
+            <section class="container-form-radio">
                 <form action="cadastro.php" method="post">
-                    <label for="option">In which financial markets do you operate?</label>
-                    <input type="radio" name="option" id="idoption1" required> stock market
-                    <input type="radio" name="option" id="idoption2" required> foreign exchange
-                    <input type="radio" name="option" id="idoption3" required> commodity
-                    <input type="radio" name="option" id="idoption4" required> bond market
-                    <input type="radio" name="option" id="idoption5" required> cryptocurrency market
+                    <h3>In which financial markets do you operate?</h3>
+                    <div class="form-radio-input">
+                        <input type="radio" name="option" id="idoption1" required>
+                        <label for="idoption1">stock market</label>
+                    </div>
+                    <div class="form-radio-input">
+                        <input type="radio" name="option" id="idoption2" required>
+                        <label for="idoption2">foreign exchange</label>
+                    </div>
+                    <div class="form-radio-input">
+                        <input type="radio" name="option" id="idoption3" required>
+                        <label for="idoption3">commodity</label>
+                    </div>
+                    <div class="form-radio-input">
+                        <input type="radio" name="option" id="idoption4" required>
+                        <label for="idoption4">bond market</label>
+                    </div>
+                    <div class="form-radio-input">
+                        <input type="radio" name="option" id="idoption5" required>
+                        <label for="idoption5">cryptocurrency market</label>
+                    </div>
                 </form>
             </section>
             <section>

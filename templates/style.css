@@ -185,10 +185,68 @@ h2 {
 .container-form-status {
     border: 1px solid lightseagreen;
     width: 500px;
+    display: flex;
+    flex-direction: column;
 }
 
+/* form status with select */
 .container-form-select {
     border: 1px solid lime;
     position: relative;
-    width: 320px;
+    width: 480px;
+    margin: 5px 3px;
 }
+
+.container-form-select select {
+    appearance: none; /* remove the arrow from the select*/
+    width: 100%;
+    padding: 6px;
+    border-radius: 50px;
+    border: 1px solid #00000026;
+    cursor: pointer;
+    margin: 8px 0;
+    width: 420px; /*size options*/
+}
+
+.container-form-select select:focus {
+    outline: none;
+    border: 1px solid #00000026;
+}
+
+.container-form-select:after {
+    border: 1px solid darkmagenta;
+    content: '\25BC'; /* unicode code for a downward arrow */
+    position: absolute;
+    top: 60%;
+    left: 10px;
+    pointer-events: none;
+    color: #3eb15f57;
+}
+
+.container-form-select-option label {
+    border: 1px solid red;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.container-form-select-option select > option {
+    border: 1px solid darkorange;
+    font-size: 10px;
+}
+
+/* .container-form-select select:focus + .container-form-select:after {
+    position: fixed;
+    color: #3EB25E;
+} */
+
+.container-form-radio form {
+    border: 1px solid purple;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-form-radio h3 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
