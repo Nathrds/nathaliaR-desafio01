@@ -239,16 +239,6 @@ h2 {
     padding-left: 32px;
 }
 
-/* .container-form-select-option select > option {
-    border: 1px solid darkorange;
-    font-size: 10px;
-} */
-
-/* .container-form-select select:focus + .container-form-select:after {
-    position: fixed;
-    color: #3EB25E;
-} */
-
 /* form radio */
 .container-form-radio form {
     border: 1px solid purple;
@@ -303,9 +293,15 @@ h2 {
     border: none;
     background-color: var(--button-before);
     color: #fff;
-    /* padding: 3.5px 23px; */
     border-radius: 35px;
     font-size: 17px;
+}
+
+.container-buttons button:hover {
+    cursor: pointer;
+    color: #000;
+    background-color: var(--button-after);
+    font-weight: bolder;
 }
 
 .container-buttons-back-next {
