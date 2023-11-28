@@ -8,3 +8,6 @@ function changeTextout() {
     let buttonOut = document.getElementById('idButton');
     buttonOut.innerHTML = "Let's go";
 }
+
+
+// page 03 arrow of the select form
