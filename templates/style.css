@@ -245,26 +245,6 @@ h2 {
     color: #3EB25E;
 }
 
-/* .container-form-select::after {
-    /* border: 1px solid darkmagenta; */
-    /* content: '\25BC'; unicode code for a downward arrow */
-    /* position: absolute;
-    top: 60%;
-    left: 10px;
-    pointer-events: none;
-    color: #3eb15f57;
-}  */
-
-.container-form-select::after:focus {
-    /* border: 1px solid darkmagenta; */
-    content: '\25BC'; /* unicode code for a downward arrow */
-    position: absolute;
-    top: 60%;
-    left: 10px;
-    pointer-events: none;
-    color: #3EB25E;
-} 
-
 .container-form-select-option label {
     /* border: 1px solid red; */
     font-weight: 700;
@@ -316,6 +296,9 @@ h2 {
 
 .form-radio-input {
     /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     margin: 6px 0;
     padding-left: 10px;
     width: 310px;
@@ -325,13 +308,13 @@ h2 {
     line-height: 42px;
     font-weight: 400;
     font-size: 18px;
+    padding-left: 5px;
 }
 
 .form-radio-input input[type="radio"] {
     border: 10px solid #3eb15f57;
     appearance: none; /* removing the default appearance of the browser */
     border-radius: 50%;
-    margin-top: 4px;
     margin-right: 5px;
 }
 
