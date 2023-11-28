@@ -239,6 +239,23 @@ h2 {
     padding-left: 32px;
 }
 
+@media screen and (max-width: 480px) {
+    .container-form-status { height: 550px; }
+
+    .container-form-select {
+        width: 320px;
+        margin: 5px 3px;
+    }
+
+    .container-form-select select { width: 319px; }
+
+    .container-form-select:after { top: 50%; }
+
+    .container-form-select-option label { font-size: 16px; }
+    
+    .container-form-select-option select { font-size: 14px; }
+}
+
 /* form radio */
 .container-form-radio form {
     /* border: 1px solid purple; */
@@ -274,8 +291,18 @@ h2 {
     margin-right: 5px;
 }
 
-.form-radio-input input[type="radio"]:checked {
-    border: 10px solid #3EB25E;
+.form-radio-input input[type="radio"]:checked { border: 10px solid #3EB25E; }
+
+@media screen and (max-width: 480px) {
+    .container-form-radio form { width: 320px; }
+
+    .container-form-radio h3 { font-size: 16px; }
+
+    .form-radio-input label { font-size: 14px; }
+    
+    .form-radio-input input[type="radio"] { border: 8px solid #3eb15f57; }
+    
+    .form-radio-input input[type="radio"]:checked { border: 8px solid #3EB25E; }
 }
 
 /* buttons */
@@ -321,4 +348,25 @@ h2 {
 .container-button-skip button {
     width: 418px;
     height: 36px;
+}
+
+@media screen and (max-width: 480px) {
+    .container-buttons {
+        width: 320px;
+        height: 90px;
+    }
+
+    .container-buttons button { font-size: 14px; }
+
+    .container-buttons-back-next { width: 320px; }
+
+    .container-buttons-back-next button {
+        width: 142px;
+        height: 26px;
+    }
+
+    .container-button-skip button {
+        width: 302px;
+        height: 26px;
+    }
 }
