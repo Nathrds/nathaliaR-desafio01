@@ -232,14 +232,37 @@ h2 {
     border: 1px solid #00000026;
 }
 
-.container-form-select:after {
-    /* border: 1px solid darkmagenta; */
+.container-form-select-option::before {
     content: '\25BC'; /* unicode code for a downward arrow */
     position: absolute;
     top: 60%;
     left: 10px;
     pointer-events: none;
     color: #3eb15f57;
+}
+
+.container-form-select-option-selected::before {
+    color: #3EB25E;
+}
+
+/* .container-form-select::after {
+    /* border: 1px solid darkmagenta; */
+    /* content: '\25BC'; unicode code for a downward arrow */
+    /* position: absolute;
+    top: 60%;
+    left: 10px;
+    pointer-events: none;
+    color: #3eb15f57;
+}  */
+
+.container-form-select::after:focus {
+    /* border: 1px solid darkmagenta; */
+    content: '\25BC'; /* unicode code for a downward arrow */
+    position: absolute;
+    top: 60%;
+    left: 10px;
+    pointer-events: none;
+    color: #3EB25E;
 } 
 
 .container-form-select-option label {

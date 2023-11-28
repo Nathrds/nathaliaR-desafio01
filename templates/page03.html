@@ -14,9 +14,9 @@
 
         <div class="container-form-status">
             <section class="container-form-select">
-                <form class="container-form-select-option" action="cadastro.php" method="post">
+                <form id="status-select" class="container-form-select-option" action="cadastro.php" method="post">
                     <label for="status">What is the status of your account?</label>
-                    <select name="status" id="idstatus" required>
+                    <select id="select-option" name="status" id="idstatus" required>
                         <option value="status1" selected> I have not created an account yet</option>
                         <option value="status2"> I already have credit in my account</option>
                         <option value="status3"> I don't know what the status of my account</option>
@@ -59,14 +59,22 @@
     </main>
     
     <script>
-    function nextButton() {
-        let optionSelected = document.querySelector('input[name="option"]:checked');
-        let selectOption = document.getElementById('idstatus');
+        // arrow
+        const form = document.getElementById('status-select');
+        const formSelect = document.getElementById('select-option');
+        formSelect.addEventListener('focus', (event)=> {form.classList.add('container-form-select-option-selected');});
+        formSelect.addEventListener('blur', (event)=> {form.classList.remove('container-form-select-option-selected');});
+        formSelect.addEventListener('change', (event)=> {formSelect.blur()});
 
-        if(optionSelected && selectOption.value !=="") {
-            window.location.href = 'page04.html';
+        // buttons
+        function nextButton() {
+            let optionSelected = document.querySelector('input[name="option"]:checked');
+            let selectOption = document.getElementById('idstatus');
+
+            if(optionSelected && selectOption.value !=="") {
+                window.location.href = 'page04.html';
+            }
         }
-    }
     </script>
 </body>
 </html>
