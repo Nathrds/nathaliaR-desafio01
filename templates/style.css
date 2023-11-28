@@ -48,7 +48,7 @@ body {
 @media screen and (max-width: 480px) {
     .container-img {
         margin-right: 0;
-        margin-top: 50px;
+        margin-top: 50vh;
         margin-bottom: 15px;
     }
 }
@@ -104,7 +104,10 @@ h2 {
 }
 
 @media screen and (max-width: 480px) {
-    .container-info button { margin-top: 15px; }
+    .container-info button { 
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
 }
 
 
@@ -141,10 +144,10 @@ h2 {
 
 .button-page2 {
     /* border: 1px solid salmon; */
+    width: 400px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 300px;
 }
 
 .button-page2 button{
@@ -153,14 +156,16 @@ h2 {
     color: #fff;
     padding: 3.5px 23px;
     border-radius: 35px;
-    font-size: 14px;
+    font-size: 16px;
+    width: 180px;
+    height: 36px;
 }
 
 
 @media screen and (max-width: 480px) {
     #container-img-size img {
         margin-right: 0px;
-        margin-top: 23vh;
+        margin-top: 3vh;
         width: 90vw;
     }
 
@@ -177,7 +182,18 @@ h2 {
         font-size: 20px;
     }
 
-    .button-page2 { left: 16%; }
+    .button-page2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 317px;
+    }
+
+    .button-page2 button {
+        font-size: 13px; 
+        width: 142px;
+        height: 26px;
+    }
 }
 
 
