@@ -209,7 +209,6 @@ h2 {
     cursor: pointer;
     margin: 8px 0;
     width: 420px; /*size options*/ 
-    background: url('down-arrow.svg');
 }
 
 .container-form-select select:focus {
@@ -219,7 +218,7 @@ h2 {
 
 .container-form-select:after {
     border: 1px solid darkmagenta;
-    /* content: '\25BC'; unicode code for a downward arrow */
+    content: '\25BC'; /* unicode code for a downward arrow */
     position: absolute;
     top: 60%;
     left: 10px;
@@ -231,6 +230,13 @@ h2 {
     border: 1px solid red;
     font-weight: 700;
     font-size: 26px;
+}
+
+.container-form-select-option select {
+    border: 1px solid brown;
+    font-weight: 400;
+    font-size: 19px;
+    padding-left: 32px;
 }
 
 /* .container-form-select-option select > option {
