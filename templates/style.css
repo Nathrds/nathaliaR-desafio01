@@ -23,7 +23,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    max-width: 1920px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -32,9 +31,9 @@ body {
 
 @media screen and (max-width: 480px) {
     .container-all {
+        /* border: 1px solid red; */
         flex-wrap: wrap;
-        justify-content: center;
-        margin: auto;
+        justify-content: center; 
     }
 }
 
@@ -48,7 +47,7 @@ body {
 @media screen and (max-width: 480px) {
     .container-img {
         margin-right: 0;
-        margin-top: 50vh;
+        margin-top: 50px;
         margin-bottom: 15px;
     }
 }
@@ -164,8 +163,9 @@ h2 {
 
 @media screen and (max-width: 480px) {
     #container-img-size img {
-        margin-right: 0px;
-        margin-top: 3vh;
+        margin-right: 0;
+        /* margin-top: 5px; */
+        margin-bottom: 15px;
         width: 90vw;
     }
 
@@ -193,6 +193,7 @@ h2 {
         font-size: 13px; 
         width: 142px;
         height: 26px;
+        margin-bottom: 20px;
     }
 }
 
@@ -440,10 +441,22 @@ h2 {
 
 
 /* page 05*/
+.container-form-status-05 {
+    width: 500px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .container-form-text h3 {
     font-weight: 700;
     font-size: 26px;
+    width: 460px;
+    padding-bottom: 10px;
 }
+
 .form-text-input {
     /* border: 1px solid green; */
     display: flex;
@@ -451,6 +464,7 @@ h2 {
     align-items: center;
     width: 500px;
     margin-top: 12px;
+    margin-bottom: 50px;
 }
 
 .form-text-input textarea{
@@ -465,4 +479,33 @@ h2 {
 .form-text-input textarea:focus { 
     border-radius: 20px;
     border: 1px solid #475242;
+}
+
+@media screen and (max-width: 480px) {
+    .container-form-status-05 {
+        /* border: 1px solid gray; */
+        width: 317px;
+        height: 300px;
+    }
+
+    .container-form-text h3 {
+        text-align: center;
+        font-size: 15px;
+        width: 317px;
+    }
+
+    .form-text-input { 
+        /* border: 1px solid pink; */
+        justify-content: center;
+        height: 131px;
+        width: 317px;
+        padding: 10px 0; 
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .form-text-input textarea{
+        width: 278px;
+        height: 131px;
+    }
 }
