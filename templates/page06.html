@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Financial Help</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main class="container-all">
@@ -12,28 +13,28 @@
         </section>
 
         <div class="container-form-status">
-            <section class="container-form-checkbox">
+            <section class="container-form-cad">
                 <form action="cadastro.php" method="post">
-                    <div class="container-form-text">
+                    <div class="container-form-cad-text">
                         <label for="idoption1">Full Name:</label>
                         <input type="text" name="option" id="idoption1" placeholder="Nasser Toghiri" required>
                     </div>
-                    <div class="container-form-text">
+                    <div class="container-form-cad-text">
                         <label for="idoption2">Email:</label>
                         <input type="email" name="option" id="idoption2" placeholder="N.Toghiri@Gmail.com" required>
                     </div>
-                    <div class="container-form-text">
+                    <div class="container-form-cad-text">
                         <label for="idoption3">Age:</label>
                         <input type="number" name="option" id="idoption3" placeholder="-- --" required>
                     </div>
                 </form>
             </section>
-            <section class="container-buttons">
-                <div class="container-buttons-back-next">
+            <section class="container-2buttons">
+                <div class="container-buttons-back">
                     <a href="page05.html"><button type="button">Back</button></a>
                 </div>
-                <div class="container-button-skip">
-                    <a href="page05.html" onclick="nextButton()"><button type="button">Skip</button></a>
+                <div class="container-button-submit">
+                    <a href="page05.html" onclick="nextButton()"><button type="submit">Submit</button></a>
                 </div>
             </section>
         </div>
