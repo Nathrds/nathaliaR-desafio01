@@ -4,8 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Financial Help</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <main class="container-all">
+        <section id="container-img-size">
+            <img src="../img/men-pg05.svg" alt="A man with short hair, wearing eyeglasses, dressed in a green formal outfit and working on the computer.">
+        </section>
+
+        <div class="container-form-status">
+            <section class="container-form-text">
+                <form action="cadastro.php" method="post">
+                    <h3>If you or someone close to you has already made a loss on the investment, write down the details</h3>
+                    <div class="form-text-input">
+                        <textarea name="text" id="idtext" cols="30" rows="10"maxlength="130" required resize="none" style="resize: none;"></textarea>
+                    </div>
+                </form>
+            </section>
+            <section class="container-buttons">
+                <div class="container-buttons-back-next">
+                    <a href="page04.html"><button type="button">Back</button></a>
+                    <a href="#" onclick="nextButton()"><button type="button">Next</button></a>
+                </div>
+                <div class="container-button-skip"><a href="page06.html"><button type="button">Skip</button></a></div>
+            </section>
+        </div>
+    </main>
+
+    <script>
+        // buttons
+        function nextButton() {
+            let textarea = document.querySelector('textarea[name="text"]').value.trim();
+
+            if(textarea !=="") {
+                window.location.href = 'page06.html';
+            }
+        }
+    </script>
 </body>
 </html>

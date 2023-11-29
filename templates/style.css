@@ -436,3 +436,33 @@ h2 {
     background-color: #3eb15f57;
     border: 10px solid #3EB25E; 
 }
+
+
+
+/* page 05*/
+.container-form-text h3 {
+    font-weight: 700;
+    font-size: 26px;
+}
+.form-text-input {
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    margin-top: 12px;
+}
+
+.form-text-input textarea{
+    /* border: 1px solid red; */
+    width: 459px;
+    height: 225px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    padding: 10px;
+}
+
+.form-text-input textarea:focus { 
+    border-radius: 20px;
+    border: 1px solid #475242;
+}

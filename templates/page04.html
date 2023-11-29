@@ -46,10 +46,10 @@
             </section>
             <section class="container-buttons">
                 <div class="container-buttons-back-next">
-                    <a href="start-pg02.html"><button type="button">Back</button></a>
+                    <a href="page03.html"><button type="button">Back</button></a>
                     <a href="#" onclick="nextButton()"><button type="button">Next</button></a>
                 </div>
-                <div class="container-button-skip"><a href="page04.html"><button type="button">Skip</button></a></div>
+                <div class="container-button-skip"><a href="page05.html"><button type="button">Skip</button></a></div>
             </section>
         </div>
     </main>
@@ -66,9 +66,6 @@
         function nextButton() {
             let optionSelected = document.querySelector('input[name="option"]:checked');
             let selectOption = document.getElementById('idstatus');
-
-            console.log(optionSelected);
-            console.log(selectOption);
 
             if(optionSelected && selectOption.value !=="") {
                 window.location.href = 'page05.html';
