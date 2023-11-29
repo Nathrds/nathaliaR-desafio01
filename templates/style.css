@@ -233,7 +233,7 @@ h2 {
 /* Page 3 - forms status */
 .container-form-status {
     /* border: 1px solid lightseagreen; */
-    width: 500px;
+    width: 483px;
     height: 700px;
     display: flex;
     flex-direction: column;
@@ -323,7 +323,7 @@ h2 {
 
 .container-form-radio h3 {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 26px;
 }
 
 .form-radio-input {
@@ -453,6 +453,11 @@ h2 {
     flex-direction: column;
     margin: 10px 0;
     padding-top: 15px;
+}
+
+.container-form-checkbox h3 {
+    font-size: 26px;
+    font-weight: 700;
 }
 
 .form-checkbox-input {
