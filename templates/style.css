@@ -93,6 +93,7 @@ h2 {
     margin-top: 50px;
     border-radius: 35px;
     font-size: 1em;
+    transition:  transform 0.2s ease-in-out;
 }
 
 .button-page2 button:hover, .container-info button:hover {
@@ -158,6 +159,7 @@ h2 {
     font-size: 16px;
     width: 180px;
     height: 36px;
+    transition:  transform 0.2s ease-in-out;
 }
 
 
@@ -350,6 +352,7 @@ h2 {
     color: #fff;
     border-radius: 35px;
     font-size: 17px;
+    transition:  transform 0.2s ease-in-out;
 }
 
 .container-buttons button:hover {
@@ -371,11 +374,13 @@ h2 {
 .container-buttons-back-next button {
     width: 198px;
     height: 36px;
+    transition:  transform 0.2s ease-in-out;
 }
 
 .container-button-skip button {
     width: 418px;
     height: 36px;
+    transition:  transform 0.2s ease-in-out;
 }
 
 @media screen and (max-width: 480px) {
@@ -477,6 +482,7 @@ h2 {
 }
 
 .form-text-input textarea:focus { 
+    outline: none;
     border-radius: 20px;
     border: 1px solid #475242;
 }
