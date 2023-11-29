@@ -6,6 +6,37 @@
     <title>Financial Help</title>
 </head>
 <body>
-    
+    <main class="container-all">
+        <section id="container-img-size">
+            <img src="../img/men-pg06.svg" alt="A man with short hair, wearing eyeglasses, dressed in a green formal outfit and working on the computer.">
+        </section>
+
+        <div class="container-form-status">
+            <section class="container-form-checkbox">
+                <form action="cadastro.php" method="post">
+                    <div class="container-form-text">
+                        <label for="idoption1">Full Name:</label>
+                        <input type="text" name="option" id="idoption1" placeholder="Nasser Toghiri" required>
+                    </div>
+                    <div class="container-form-text">
+                        <label for="idoption2">Email:</label>
+                        <input type="email" name="option" id="idoption2" placeholder="N.Toghiri@Gmail.com" required>
+                    </div>
+                    <div class="container-form-text">
+                        <label for="idoption3">Age:</label>
+                        <input type="number" name="option" id="idoption3" placeholder="-- --" required>
+                    </div>
+                </form>
+            </section>
+            <section class="container-buttons">
+                <div class="container-buttons-back-next">
+                    <a href="page05.html"><button type="button">Back</button></a>
+                </div>
+                <div class="container-button-skip">
+                    <a href="page05.html" onclick="nextButton()"><button type="button">Skip</button></a>
+                </div>
+            </section>
+        </div>
+    </main>
 </body>
 </html>
