@@ -353,10 +353,6 @@ h2 {
 .form-radio-input input[type="radio"]:checked { border: 10px solid #3EB25E; }
 
 @media screen and (max-width: 480px) {
-    .container-form-radio {
-        
-    }
-    
     .container-form-radio form { 
         padding: 0px;
         margin: 0px;
