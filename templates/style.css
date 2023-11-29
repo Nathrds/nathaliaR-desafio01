@@ -397,3 +397,42 @@ h2 {
         height: 26px;
     }
 }
+
+
+/* page 04 */
+.container-form-checkbox form {
+    /* border: 1px solid purple; */
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    padding-top: 15px;
+}
+
+.form-checkbox-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 6px 0;
+    padding-left: 10px;
+    width: 310px;
+}
+
+.form-checkbox-input label {
+    line-height: 42px;
+    font-weight: 400;
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+.form-checkbox-input input[type="checkbox"] {
+    background-color: #3eb15f46;
+    border: 10px solid #3eb15f46;
+    border-radius: 5px;
+    margin-right: 5px;
+    appearance: none; /* removing the default appearance of the browser */
+}
+
+.form-checkbox-input input[type="checkbox"]:checked { 
+    background-color: #3eb15f57;
+    border: 10px solid #3EB25E; 
+}

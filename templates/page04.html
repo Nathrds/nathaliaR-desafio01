@@ -4,8 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Financial Help</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body id="page4">
-    
+<body>
+    <main class="container-all">
+        <section id="container-img-size">
+            <img src="../img/men-pg04.svg" alt="A man with short hair, wearing eyeglasses, dressed in a green formal outfit and working on the computer.">
+        </section>
+
+        <div class="container-form-status">
+            <section class="container-form-select">
+                <form id="status-select" class="container-form-select-option" action="cadastro.php" method="post">
+                    <label for="status">How do you decide to invest?</label>
+                    <select name="status" id="idstatus" required>
+                        <option value="status" selected> I have not invested yet</option>
+                        <option value="status"> I already have an investment</option>
+                        <option value="status"> I don't know the status of my investment</option>
+                    </select>
+                </form>
+            </section>
+            <section class="container-form-checkbox">
+                <form action="cadastro.php" method="post">
+                    <h3>What resources have you used or are you using for your training?</h3>
+                    <div class="form-checkbox-input">
+                        <input type="checkbox" name="option" id="idoption2" required>
+                        <label for="idoption2">Books and articles</label>
+                    </div>
+                    <div class="form-checkbox-input">
+                        <input type="checkbox" name="option" id="idoption3" required>
+                        <label for="idoption3">YouTube tutorial videos</label>
+                    </div>
+                    <div class="form-checkbox-input">
+                        <input type="checkbox" name="option" id="idoption4" required>
+                        <label for="idoption4">online or face to face courses</label>
+                    </div>
+                    <div class="form-checkbox-input">
+                        <input type="checkbox" name="option" id="idoption5" required>
+                        <label for="idoption5">experience with little investment</label>
+                    </div>
+                </form>
+            </section>
+            <section class="container-buttons">
+                <div class="container-buttons-back-next">
+                    <a href="start-pg02.html"><button type="button">Back</button></a>
+                    <a href="#" onclick="nextButton()"><button type="button">Next</button></a>
+                </div>
+                <div class="container-button-skip"><a href="page04.html"><button type="button">Skip</button></a></div>
+            </section>
+        </div>
+    </main>
+
+    <script>
+        // arrow
+        const form = document.getElementById('status-select');
+        const formSelect = document.getElementById('idstatus');
+        formSelect.addEventListener('focus', (event)=> {form.classList.add('container-form-select-option-selected');});
+        formSelect.addEventListener('blur', (event)=> {form.classList.remove('container-form-select-option-selected');});
+        formSelect.addEventListener('change', (event)=> {formSelect.blur()});
+
+        // buttons
+        function nextButton() {
+            let optionSelected = document.querySelector('input[name="option"]:checked');
+            let selectOption = document.getElementById('idstatus');
+
+            console.log(optionSelected);
+            console.log(selectOption);
+
+            if(optionSelected && selectOption.value !=="") {
+                window.location.href = 'page04.html';
+            }
+        }
+    </script>
 </body>
 </html>
