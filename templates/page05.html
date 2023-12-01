@@ -43,16 +43,16 @@
         }
 
         // Number of characters remaining
-        document.addEventListener( function() {
+        document.addEventListener( 'DOMContentLoaded', function() {
             let text_areaCharacters = document.getElementById('idtext');
             let contNum = document.getElementById('numCharacters');
 
-            text_areaCharacters.addEventListener( function () {
-                let lengthText = text_areaCharacters.valuie.length;
+            text_areaCharacters.addEventListener( 'input', function () {
+                let lengthText = text_areaCharacters.value.length;
                 let limitCharacters = 130;
                 let restCharacters = limitCharacters - lengthText;
 
-                contNum.textContent = restCharacters + 'Number of characters ';
+                contNum.textContent = 'Number of characters ' + restCharacters;
             });
         });
     </script>
