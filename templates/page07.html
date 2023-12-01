@@ -4,13 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Financial Help</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Lexend+Deca:wght@200;300;400;500;600;700;800;900&family=Passion+One&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&family=Sriracha&display=swap');
+        
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body { background-color: rgba(62, 178, 95, 0.064); }
+
+        .container-last-page {
+            /* border: 1px solid red; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 700px;
+            height: 300px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        .container-last-page h1 {
+            font-weight: 700;
+            font-size: 39px;
+            margin: 15px 0;
+        }
+
+        .container-last-page h2 {
+            font-weight: 400;
+            font-size: 28px;
+            padding: 5px 0;
+        }
+
+        .container-last-page p {
+            font-weight: 400;
+            font-size: 18px;
+            margin: 15px 0;
+        }
+
+        .container-last-page button {
+            width: 418px;
+            height: 36px;
+            border-radius: 35px;
+            background: #3EB25E;
+            color: #fff;
+            font-size: 22px;
+            font-weight: 700;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+            margin-top: 40px;
+        }
+
+        .container-last-page button:hover {
+            background: #FFFF7D;
+            color: #000;
+        }
+
+        @media screen and (max-width: 480px) {
+            .container-last-page {
+                width: 317px;
+                height: 300px;
+                position: absolute;
+            }
+
+            .container-last-page h1 {
+                width: 318px;
+                font-size: 27px;
+                margin: 15px 0;
+            }
+
+            .container-last-page h2 { font-size: 18px; }
+
+            .container-last-page p { font-size: 16px; }
+
+            .container-last-page button {
+                width: 302px;
+                height: 26px;
+                font-size: 16px;
+                margin-top: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
     <main>
-        <section>
+        <section class="container-last-page">
             <h1>Registration successfully completed!</h1>
             <h2>Please wait, and we will contact you.</h2>
             <p>Thank you</p>
+            <a href="index.html"><button type="button">Return</button></a>
         </section>
     </main>
 </body>
