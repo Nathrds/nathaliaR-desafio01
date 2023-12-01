@@ -43,13 +43,14 @@
     <script>
         // buttons
         function submitButton() {
-            let textCad = document.querySelector('input[name="cad"]').value.trim();
-            let textCadId1 = document.getElementById('idcad1');
-            let textCadId2 = document.getElementById('idcad2');
-            let textCadId3 = document.getElementById('idcad3');
-            
-            if(textCad && textCadId1 && textCadId2 && textCadId3 !=="") {
-                window.location.href = 'page07.html';
+            let name = document.getElementById('idcad1').value;
+            let email = document.getElementById('idcad2').value;
+            let age = document.getElementById('idcad3').value;
+
+            if(name.trim() ==='' || email.trim() === '' || age.trim() === '') {
+                alert('Please fill in all fields before proceeding')
+            } else {
+                window.location.href = "page07.html";
             }
         }
     </script>
