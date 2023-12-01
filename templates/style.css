@@ -41,6 +41,8 @@ body {
     }
 }
 
+
+/* --------------------------------------------------------------------- */
 /* main index */
 .container-all {
     /* border: 1px solid red; */
@@ -80,6 +82,10 @@ body {
     .container-img img { width: 317px; }
 }
 
+@media screen and (min-width: 280px) { /* galaxy fold */
+    .container-img img { width: 276px; }
+}
+
 /*h1 and h2 with button*/
 .container-info {
     /* border: 1px solid blue; */
@@ -111,6 +117,12 @@ h2 {
     h2 {font-size: 20px;}        
 }
 
+@media screen and (min-width: 280px) { /* galaxy fold */
+    h1 {font-size: 50px;}
+    
+    h2 {font-size: 17px;} 
+}
+
 /*button*/
 .container-info button {
     /* border: 1px solid purple; */
@@ -140,8 +152,16 @@ h2 {
     }
 }
 
+@media screen and (min-width: 280px) { /* galaxy fold */
+    .container-info button { 
+        font-size: 17px;
+        width: 190px;
+        height: 33px;
+    }
+}
 
 
+/* --------------------------------------------------------------------- */
 /*Page 02 - start*/
 #container-img-size img {
     /* border: 1px solid darkmagenta; */
@@ -196,7 +216,6 @@ h2 {
 @media screen and (max-width: 480px) {
     #container-img-size img {
         margin-right: 0;
-        /* margin-top: 5px; */
         margin-bottom: 15px;
         width: 90vw;
     }
@@ -229,7 +248,36 @@ h2 {
     }
 }
 
+@media screen and (min-width: 280px) { /* galaxy fold */ 
+    .container-info-pg02 {
+        margin-top: 6px;
+        height: 312px;
+        width: 276px; 
+    }
+    
+    #h1-pg02 { font-size: 23px; }
 
+    #h2-pg02 { 
+        width: 270px;
+        font-size: 16px;
+    }
+
+    .button-page2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 276px;
+    }
+
+    .button-page2 button {
+        width: 119px;
+        height: 26px;
+    }
+}
+
+
+
+/* --------------------------------------------------------------------- */
 /* Page 3 - forms status */
 .container-form-status {
     /* border: 1px solid lightseagreen; */
@@ -312,6 +360,19 @@ h2 {
     .container-form-select-option select { font-size: 14px; }
 }
 
+@media screen and (min-width: 280px) { /* galaxy fold */ 
+    .container-form-status {
+        width: 276px;
+        height: 550px; }
+        
+    .container-form-select { width: 276px; }
+
+    .container-form-select select { width: 275px; }
+
+    .container-form-select-option::before { top: 50%; }
+}
+
+
 /* form radio */
 .container-form-radio form {
     /* border: 1px solid purple; */
@@ -370,6 +431,13 @@ h2 {
     
     .form-radio-input input[type="radio"]:checked { border: 8px solid #3EB25E; }
 }
+
+@media screen and (min-width: 280px) { /* galaxy fold */ 
+    .container-form-radio form { width: 276px; }
+
+    .form-radio-input label { font-size: 15px; }
+}
+
 
 /* buttons */
 .container-buttons {
@@ -441,7 +509,26 @@ h2 {
     }
 }
 
+@media screen and (min-width: 280px) { /* galaxy fold */ 
+    .container-buttons { width: 276px; }
 
+    .container-buttons button { font-size: 15px; }
+
+    .container-buttons-back-next { width: 276px; }
+
+    .container-buttons-back-next button {
+        width: 130px;
+        height: 25px;
+    }
+
+    .container-button-skip button {
+        width: 275px;
+        height: 25px;
+    }
+}
+
+
+/* --------------------------------------------------------------------- */
 /* page 04 */
 .container-form-checkbox form {
     /* border: 1px solid purple; */
@@ -504,8 +591,16 @@ h2 {
     .form-checkbox-input input[type="checkbox"]:checked { border: 8px solid #3EB25E; }
 }
 
+@media screen and (min-width: 280px) { /* galaxy fold */ 
+    .container-form-checkbox form { width: 276px; }
+
+    .form-checkbox-input label { font-size: 15px;}
+
+    .container-form-checkbox h3 { margin: 6px 0; }
+}
 
 
+/* --------------------------------------------------------------------- */
 /* page 05*/
 .container-form-status-05 {
     width: 500px;
@@ -585,7 +680,32 @@ h2 {
     }
 }
 
+@media screen and (min-width: 280px) { /* galaxy fold */  
+    .container-form-status-05 { width: 276px; }
 
+    .container-form-text h3 {
+        text-align: center;
+        font-size: 15px;
+        width: 276px;
+    }
+
+    .form-text-input { 
+        justify-content: center;
+        height: 131px;
+        width: 270px;
+        margin: 10px 0;
+    }
+
+    .form-text-input textarea{
+        width: 270px;
+        height: 131px;
+        font-size: 15px;
+        margin-left: 5px;
+    }
+}
+
+
+/* --------------------------------------------------------------------- */
 /* Page 06 */
 .container-form-cad form {
     /* border: 1px solid green; */
@@ -631,7 +751,7 @@ h2 {
     color: rgba(0, 0, 0, 0.25);
 }
 
-#idoption3 {
+#idcad3 {
     /* border: 1px solid darkblue; */
     width: 152px;
     height: 52px;
@@ -710,7 +830,7 @@ h2 {
         padding-left: 2px;
     }
 
-    #idoption3 {
+    #idcad3 {
         width: 111px;
         height: 33px;
     }
@@ -735,5 +855,28 @@ h2 {
     .container-button-submit button {
         width: 302px;
         height: 26px;
+    }
+}
+
+@media screen and (min-width: 280px) { /* galaxy fold */ 
+    .container-form-cad form { width: 270px; }
+
+    .container-form-cad-text input {
+        width: 270px;
+        font-size: 15px;
+    }
+    
+    .container-form-cad-text ::placeholder { font-size: 15px; }
+
+    .container-2buttons { width: 276px; }
+
+    .container-buttons-back button {
+        width: 270px;
+        height: 25px;
+    }
+    
+    .container-button-submit button {
+        width: 270px;
+        height: 25px;
     }
 }
