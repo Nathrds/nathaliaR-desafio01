@@ -44,8 +44,11 @@
         // buttons
         function submitButton() {
             let textCad = document.querySelector('input[name="cad"]').value.trim();
-
-            if(textCad !=="") {
+            let textCadId1 = document.getElementById('idcad1');
+            let textCadId2 = document.getElementById('idcad2');
+            let textCadId3 = document.getElementById('idcad3');
+            
+            if(textCad && textCadId1 && textCadId2 && textCadId3 !=="") {
                 window.location.href = 'page07.html';
             }
         }
