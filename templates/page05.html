@@ -18,7 +18,7 @@
                     <h3>If you or someone close to you has already made a loss on the investment, write down the details</h3>
                     <div class="form-text-input">
                         <textarea name="text" id="idtext" cols="30" rows="10"maxlength="130" required resize="none" style="resize: none;"></textarea>
-                        <p id="numCharacters">Number of characters 130</p>
+                        <p id="numCharacters">Number of characters: 130</p>
                     </div>
                 </form>
             </section>
@@ -52,7 +52,7 @@
                 let limitCharacters = 130;
                 let restCharacters = limitCharacters - lengthText;
 
-                contNum.textContent = 'Number of characters ' + restCharacters;
+                contNum.textContent = 'Number of characters: ' + restCharacters;
             });
         });
     </script>

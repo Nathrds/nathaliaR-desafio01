@@ -661,6 +661,14 @@ h2 {
     border: 1px solid #475242;
 }
 
+#numCharacters {
+    /* border: 1px solid darkcyan; */
+    margin: 5px 0;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(62, 178, 95);
+}
+
 @media screen and (max-width: 480px) {
     .container-form-status-05 {
         /* border: 1px solid gray; */
@@ -669,10 +677,11 @@ h2 {
     }
 
     .container-form-text h3 {
-        text-align: justify;
+        text-align: left;
+        width: 261px;
+        height: 59px;
         font-size: 16px;
-        width: 317px;
-        margin-left: 0px;
+        margin-left: 26px;
     }
 
     .form-text-input { 
@@ -684,10 +693,12 @@ h2 {
     }
 
     .form-text-input textarea{
-        width: 298px;
+        width: 278px;
         height: 131px;
         font-size: 16px;
     }
+
+    #numCharacters { font-size: 14px; }
 }
 
 @media screen and (max-width: 320px) { /* galaxy fold 280px */  
@@ -713,6 +724,8 @@ h2 {
         font-size: 15px;
         margin-left: 5px;
     }
+
+    #numCharacters { font-size: 13px; }
 }
 
 
