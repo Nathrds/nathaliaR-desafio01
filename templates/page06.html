@@ -16,16 +16,16 @@
             <section class="container-form-cad">
                 <form action="cadastro.php" method="post">
                     <div class="container-form-cad-text">
-                        <label for="idoption1">Full Name:</label>
-                        <input type="text" name="option" id="idoption1" placeholder="Nasser Toghiri" required>
+                        <label for="idcad1">Full Name:</label>
+                        <input type="text" name="cad" id="idcad1" placeholder="Nasser Toghiri" required>
                     </div>
                     <div class="container-form-cad-text">
-                        <label for="idoption2">Email:</label>
-                        <input type="email" name="option" id="idoption2" placeholder="N.Toghiri@Gmail.com" required>
+                        <label for="idcad2">Email:</label>
+                        <input type="email" name="cad" id="idcad2" placeholder="N.Toghiri@Gmail.com" required>
                     </div>
                     <div class="container-form-cad-text">
-                        <label for="idoption3">Age:</label>
-                        <input type="number" name="option" id="idoption3" placeholder="-- --" required>
+                        <label for="idcad3">Age:</label>
+                        <input type="number" name="cad" id="idcad3" placeholder="-- --" required>
                     </div>
                 </form>
             </section>
@@ -34,10 +34,21 @@
                     <a href="page05.html"><button type="button">Back</button></a>
                 </div>
                 <div class="container-button-submit">
-                    <a href="page05.html" onclick="nextButton()"><button type="submit">Submit</button></a>
+                    <a href="page05.html" onclick="submitButton()"><button type="submit">Submit</button></a>
                 </div>
             </section>
         </div>
     </main>
+
+    <script>
+        // buttons
+        function submitButton() {
+            let textCad = document.querySelector('input[name="cad"]').value.trim();
+
+            if(textCad !=="") {
+                window.location.href = 'page07.html';
+            }
+        }
+    </script>
 </body>
 </html>
